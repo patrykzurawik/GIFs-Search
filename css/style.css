@@ -1,0 +1,163 @@
+body
+{
+	background-color: #262626;
+	color: #f0f0f0;
+}
+
+#container
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1100px;
+}
+
+#logo
+{
+	width: 610px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -60px;
+}
+
+#logo a
+{
+	font-weight: 700;
+	text-decoration: none;
+	color: #f0f0f0;
+}
+
+#logo a:hover
+{
+	font-weight: 700;
+	text-decoration: none;
+	color: #f0f0f0;
+}
+
+#logo a:visited
+{
+	font-weight: 700;
+	text-decoration: none;
+	color: #f0f0f0;
+}
+
+#logoTop
+{
+	font-family: 'Lobster', cursive;
+	font-weight: 700;
+	font-size: 136px;
+	text-align: center;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+
+#logoBottom
+{
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 24px;
+	text-align: right;
+	margin-top: 0px;
+	padding: 0px;
+	margin-top: -25px;
+}
+
+#gifImage
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#searchBar
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 35px;
+	margin-bottom: 20px;
+}
+
+#searchBar > form > input[id=searchBarInput]
+{
+	width: 700px;
+	height: 50px;
+	font-size: 30px;
+	text-align: left;
+	color: #262626;
+	padding: 20px;
+	border: 2px solid #ddd;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	box-sizing: border-box;
+	-webkit-box-shadow: -10px 0px 30px 5px rgba(0,0,0,0.5);
+	-moz-box-shadow: -10px 0px 30px 5px rgba(0,0,0,0.5);
+	box-shadow: -10px 0px 30px 5px rgba(0,0,0,0.5);
+	outline: none;
+}
+
+#searchBar > form > button[id=searchBarSubmit]
+{
+	width: 70px;
+	height: 50px;
+	font-size: 30px;
+	text-align: left;
+	color: #262626;
+	background-color: #ffcede;
+	border: 2px solid #ddd;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	box-sizing: border-box;
+	-webkit-box-shadow: 10px 0px 30px 5px rgba(0,0,0,0.5);
+	-moz-box-shadow: 10px 0px 30px 5px rgba(0,0,0,0.5);
+	box-shadow: 10px 0px 30px 5px rgba(0,0,0,0.5);
+	outline: none;
+	cursor: pointer;
+}
+
+#searchBar > form > input[id=searchBarNumber]
+{
+	width: 70px;
+	height: 50px;
+	font-size: 30px;
+	text-align: center;
+	color: #262626;
+	border: 2px solid #ddd;
+	box-sizing: border-box;
+	outline: none;
+}
+
+#searchResults
+{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.gif
+{
+	float: left;
+	margin: 3px;
+}
+
+.gif > form > button[class=like]
+{
+	width: 22px;
+	background-color: #262626;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.gif > form > button[class=dislike]
+{
+	width: 24px;
+	background-color: #262626;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+#footer
+{
+	clear: both;
+	color: #101010;
+}

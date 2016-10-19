@@ -156,8 +156,55 @@ body
 	cursor: pointer;
 }
 
-#footer
+#scrollUpButton
 {
-	clear: both;
-	color: #101010;
+	display: none;
+	border-radius: 5px;
+	width: 64px;
+	height: 64px;
+	text-decoration: none;
+	background-image: url("../img/scrollUpButton.png");
+	position: fixed;
+	right: 40px;
+	bottom: 60px;
 }
+
+/*fontello css*/
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?92230815');
+  src: url('../font/fontello.eot?92230815#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?92230815') format('woff2'),
+       url('../font/fontello.woff?92230815') format('woff'),
+       url('../font/fontello.ttf?92230815') format('truetype'),
+       url('../font/fontello.svg?92230815#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+
+  font-variant: normal;
+  text-transform: none;
+ 
+  line-height: 1em;
+ 
+  margin-left: .2em;
+ 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.icon-search:before { content: '\e800'; } /* '' */
+.icon-thumbs-up-alt:before { content: '\f164'; color: #97ff6b; } /* '' */
+.icon-thumbs-down-alt:before { content: '\f165'; color: #ff4e44; } /* '' */

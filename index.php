@@ -24,6 +24,10 @@
 	if (isset($_POST['like']))
 	{	
 		$postID = $_POST['like'];
+
+		$postID = htmlentities($postID, ENT_QUOTES, "utf-8");
+		$postID - mysqli_real_escape_string($connect, $postID);
+
 		$sql_like = "UPDATE gif SET likes=(likes+1) WHERE id='$postID'";
 		$sql_liked = @$connect->query($sql_like);
 		unset($_POST['like']);
@@ -32,6 +36,10 @@
 	if (isset($_POST['dislike']))
 	{	
 		$postID = $_POST['dislike'];
+		
+		$postID = htmlentities($postID, ENT_QUOTES, "utf-8");
+		$postID - mysqli_real_escape_string($connect, $postID);
+
 		$sql_dislike = "UPDATE gif SET dislikes=(dislikes+1) WHERE id='$postID'";
 		$sql_disliked = @$connect->query($sql_dislike);
 		unset($_POST['dislike']);
@@ -40,6 +48,10 @@
 	if (isset($_POST['likeNEW']))
 	{	
 		$postID = $_POST['likeNEW'];
+		
+		$postID = htmlentities($postID, ENT_QUOTES, "utf-8");
+		$postID - mysqli_real_escape_string($connect, $postID);
+
 		$sql_likeNEW = "INSERT INTO gif (id, likes, dislikes) VALUES ('$postID', '1', '0')";
 		$sql_likedNEW = @$connect->query($sql_likeNEW);
 		unset($_POST['likeNEW']);
@@ -48,13 +60,16 @@
 	if (isset($_POST['dislikeNEW']))
 	{	
 		$postID = $_POST['dislikeNEW'];
+
+		$postID = htmlentities($postID, ENT_QUOTES, "utf-8");
+		$postID - mysqli_real_escape_string($connect, $postID);
+
 		$sql_dislikeNEW = "INSERT INTO gif (id, likes, dislikes) VALUES ('$postID', '0', '1')";
 		$sql_dislikedNEW = @$connect->query($sql_dislikeNEW);
 		unset($_POST['dislikeNEW']);
 	}
 
 ?>
-
 <!DOCTYPE HTML>
 <html lang="PL">
 	<head>
@@ -128,6 +143,9 @@
 							{
 								$found = 1;
 								$id = $results['data'][$i]['id'];
+
+								$id = htmlentities($id, ENT_QUOTES, "utf-8");
+								$id - mysqli_real_escape_string($connect, $id);
 								
 								$sql = "SELECT * FROM gif WHERE id='$id'";
 								$sql_result = @$connect->query($sql);

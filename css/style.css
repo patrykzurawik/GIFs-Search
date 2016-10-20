@@ -16,7 +16,7 @@ body
 	width: 610px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -60px;
+	/*margin-top: -60px;*/
 }
 
 #logo a
@@ -58,23 +58,25 @@ body
 	margin-top: 0px;
 	padding: 0px;
 	margin-top: -25px;
+	margin-bottom: 25px;
 }
 
 #gifImage
 {
+	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
+	margin-bottom: -80px;
 }
 
 #searchBar
 {
-	width: 1000px;
+	width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	margin-top: 35px;
-	margin-bottom: 20px;
+	/*margin-top: 35px;*/
+	/*margin-bottom: 20px;*/
 }
 
 #searchBar > form > input[id=searchBarInput]
@@ -129,7 +131,7 @@ body
 #searchResults
 {
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 .gif
@@ -167,6 +169,13 @@ body
 	position: fixed;
 	right: 40px;
 	bottom: 60px;
+}
+
+.sticky
+{
+	position: fixed;
+	top: 0;
+	margin-top: 5px;
 }
 
 /*fontello css*/
